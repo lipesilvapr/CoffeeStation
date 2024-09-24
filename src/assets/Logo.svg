@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105" height="105" viewBox="0 0 105 105" fill="none">
+  <path d="M74.375 39.375V78.75C74.375 86.0125 68.5125 91.875 61.25 91.875H35C27.7375 91.875 21.875 86.0125 21.875 78.75V39.375H74.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M74.375 39.375H87.5C89.9063 39.375 91.875 41.3437 91.875 43.75V56.875C91.875 59.2813 89.9063 61.25 87.5 61.25H74.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <mask id="mask0_1_19" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="25" y="-1" width="46" height="72">
+    <path d="M35 0C35 8.75 26.25 8.75 26.25 17.5C26.25 26.25 35 26.25 35 35C35 43.75 26.25 43.75 26.25 52.5C26.25 61.25 35 61.25 35 70M52.5 0C52.5 8.75 43.75 8.75 43.75 17.5C43.75 26.25 52.5 26.25 52.5 35C52.5 43.75 43.75 43.75 43.75 52.5C43.75 61.25 52.5 61.25 52.5 70M70 0C70 8.75 61.25 8.75 61.25 17.5C61.25 26.25 70 26.25 70 35C70 43.75 61.25 43.75 61.25 52.5C61.25 61.25 70 61.25 70 70" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </mask>
+  <g mask="url(#mask0_1_19)">
+    <path d="M105 8.75H0V30.625H105V8.75Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
