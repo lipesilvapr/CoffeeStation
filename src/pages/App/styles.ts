@@ -96,3 +96,15 @@ export const Sobre = styled.section`
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
   }
 `;
+
+export const Produtos = styled.section`
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 8%;
+  margin-right: 9%;
+
+  h1 {
+    font-size: 40px;
+  }
+`

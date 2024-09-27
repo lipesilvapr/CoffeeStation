@@ -1,10 +1,11 @@
-import { AppContainer, HeaderContainer, Novidades, Sobre, StyledSvg } from "./styles";
+import { AppContainer, HeaderContainer, Novidades, Produtos, Sobre, StyledSvg } from "./styles";
 import Logo from "../../assets/Logo.svg";
 import NavBar from "../../components/NavBar/NavBar";
 import ImgNovidades from '../../assets/img/Projeto Do Menu De Cafeteria.jpg';
 import Divisao from "../../components/Divisao/Divisao";
 import Img1 from '../../assets/img/Original ideas for a coffee shop.jpg';
 import Img2 from '../../assets/img/download.jpg';
+import Menu from "../../components/Menu/Menu";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
         </div>
       </Sobre>
       <Divisao/>
+      <Produtos>
+        <h1>Produtos</h1>
+        <Menu/>
+      </Produtos>
     </AppContainer>
   );
 }
