@@ -108,3 +108,20 @@ export const Produtos = styled.section`
     font-size: 40px;
   }
 `
+export const Contato = styled.section`
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 8%;
+  margin-right: 9%;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+`

@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 4%;
-
 
   ul {
     display: flex;
@@ -19,5 +17,10 @@ export const Nav = styled.nav`
     font-size: 22px;
     font-family: "Inter", sans-serif;
     cursor: pointer;
+  }
+
+  .nostyle {
+    color: inherit;
+    text-decoration: none;
   }
 `;

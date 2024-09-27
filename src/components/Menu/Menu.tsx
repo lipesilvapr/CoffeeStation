@@ -4,8 +4,12 @@ import { Categoria } from "./styles";
 function Menu() {
   return (
     <Categoria>
-      <p>Cafés Especiais</p>
-      <Produto/>
+      <p className="titulo">Cafés Especiais</p>
+      <Produto type="especiais"/>
+      <p className="titulo">Cafés Artesanais</p>
+      <Produto type="artesanais"/>
+      <p className="titulo">Lanches Deliciosos (Unidade/Fatia)</p>
+      <Produto type="lanches"/>
     </Categoria>
   );
 }
