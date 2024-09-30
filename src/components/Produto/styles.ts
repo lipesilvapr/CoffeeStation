@@ -18,6 +18,7 @@ export const Shape = styled.div`
   border-radius: 22px;
   border: 3px solid #454342;
   font-family: "Pacifico", sans-serif;
+  cursor: pointer;
 
   h1 {
     font-size: 30px;
@@ -50,5 +51,11 @@ export const Shape = styled.div`
 
   .Bolo{
     width: 70%;
+  }
+
+  &:hover {
+    background-color: #C9A471; 
+    transform: scale(1.02); 
+    transition: all 0.3s ease; 
   }
 `;

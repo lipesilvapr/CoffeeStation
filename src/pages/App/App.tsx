@@ -14,6 +14,7 @@ import Divisao from "../../components/Divisao/Divisao";
 import Img1 from "../../assets/img/Original ideas for a coffee shop.jpg";
 import Img2 from "../../assets/img/download.jpg";
 import Menu from "../../components/Menu/Menu";
+import Carrinho from "../../components/Carrinho/Carrinho";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </div>
         <NavBar />
       </HeaderContainer>
+      <Carrinho/>
       <Novidades id="Novidades">
         <div className="texto">
           <h1>Novidades</h1>

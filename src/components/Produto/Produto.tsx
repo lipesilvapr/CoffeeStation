@@ -12,99 +12,50 @@ import Croissant from "../../assets/img/download (1) 1.png";
 import Bolo from "../../assets/img/download (2) 1.png";
 import Torta from "../../assets/img/Torta de Limão sem Gelatina - Cook'n Enjoy 1.png";
 
+import { useCart } from '../../context/CarrinhoContext'; 
+
 interface Props {
   type: string;
 }
 
 const Produto: React.FC<Props> = ({ type }) => {
-  if (type === "especiais") {
-    return (
-      <Colecao>
-        <Shape>
-          <h1>Espresso</h1>
-          <p>Dose intensa e rica, perfeita para um sabor concentrado.</p>
-          <img src={Espresso} />
-          <h1 className="preco">R$ 8,00</h1>
+  const { addToCart } = useCart(); 
+
+  const produtosEspeciais = [
+    { id: 'espresso', name: 'Espresso', description: 'Dose intensa e rica, perfeita para um sabor concentrado.', price: 8.00, img: Espresso },
+    { id: 'cappuccino', name: 'Cappuccino', description: 'Café expresso com leite cremoso e espuma leve.', price: 12.00, img: Cappuccino },
+    { id: 'mocha', name: 'Mocha', description: 'Mistura de café e chocolate, coberto com chantilly.', price: 14.00, img: Mocha },
+    { id: 'aromatizado', name: 'Café Aromatizado', description: 'Café suave com um toque doce.', price: 8.00, img: Aromatizado },
+  ];
+
+  const produtosArtesanais = [
+    { id: 'cha_preto', name: 'Chá Preto', description: 'Sabor robusto e encorpado, ideal para qualquer hora.', price: 6.00, img: ChaPreto },
+    { id: 'cha_verde', name: 'Chá Verde', description: 'Leve e refrescante, cheio de antioxidantes.', price: 12.00, img: ChaVerde },
+    { id: 'cha_gelado', name: 'Chá Gelado', description: 'Refrescante e perfeito para dias quentes.', price: 14.00, img: ChaGelado },
+    { id: 'cha_morango', name: 'Chá de Frutas Vermelhas', description: 'Combinação frutada e deliciosa, ótima quente ou gelada.', price: 8.00, img: ChaMorango },
+  ];
+
+  const produtosLanches = [
+    { id: 'pao_de_queijo', name: 'Pão de Queijo', description: 'Crocante por fora, macio e saboroso por dentro.', price: 5.00, img: PaoDeQueijo },
+    { id: 'croissant', name: 'Croissant', description: 'Massa folhada com recheio delicioso.', price: 9.00, img: Croissant },
+    { id: 'bolo', name: 'Bolo', description: 'Mistura de café e chocolate, coberto com chantilly.', price: 10.00, img: Bolo },
+    { id: 'torta', name: 'Torta de Limão', description: 'Deliciosa e azedinha, com massa crocante e creme leve.', price: 10.00, img: Torta },
+  ];
+
+  const produtos = type === "especiais" ? produtosEspeciais : type === "artesanais" ? produtosArtesanais : produtosLanches;
+
+  return (
+    <Colecao>
+      {produtos.map(produto => (
+        <Shape key={produto.id} onClick={() => addToCart({ id: produto.id, name: produto.name, price: produto.price })}>
+          <h1>{produto.name}</h1>
+          <p>{produto.description}</p>
+          <img className={produto.id === 'bolo' ?  'Bolo' : produto.id === 'cha_gelado' ? 'ChaGelado' : produto.id === 'cha_morango' ? 'Morango' : ''} src={produto.img} alt={produto.name} />
+          <h1 className="preco">R$ {produto.price.toFixed(2)}</h1>
         </Shape>
-        <Shape>
-          <h1>Cappuccino</h1>
-          <p>Café expresso com leite cremoso e espuma leve.</p>
-          <img src={Cappuccino} />
-          <h1 className="preco">R$ 12,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Mocha</h1>
-          <p>Mistura de café e chocolate, coberto com chantilly.</p>
-          <img src={Mocha} />
-          <h1 className="preco">R$ 14,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Café Aromatizado</h1>
-          <p>Café suave com um toque doce.</p>
-          <img src={Aromatizado} />
-          <h1 className="preco">R$ 8,00</h1>
-        </Shape>
-      </Colecao>
-    );
-  } else if (type === "artesanais") {
-    return (
-      <Colecao>
-        <Shape>
-          <h1>Chá Preto</h1>
-          <p>Sabor robusto e encorpado, ideal para qualquer hora.</p>
-          <img src={ChaPreto} />
-          <h1 className="preco">R$ 6,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Chá Verde</h1>
-          <p>Leve e refrescante, cheio de antioxidantes.</p>
-          <img src={ChaVerde} />
-          <h1 className="preco">R$ 12,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Chá Gelado</h1>
-          <p>Refrescante e perfeito para dias quentes.</p>
-          <img className="ChaGelado" src={ChaGelado} />
-          <h1 className="preco">R$ 14,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Chá de Frutas Vermelhas</h1>
-          <p>Combinação frutada e deliciosa, ótima quente ou gelada.</p>
-          <img className="Morango" src={ChaMorango} />
-          <h1 className="preco">R$ 8,00</h1>
-        </Shape>
-      </Colecao>
-    );
-  } else if (type === "lanches") {
-    return (
-      <Colecao>
-        <Shape>
-          <h1>Pão de Queijo</h1>
-          <p>Crocante por fora, macio e saboroso por dentro.</p>
-          <img src={PaoDeQueijo} />
-          <h1 className="preco">R$ 5,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Croissant</h1>
-          <p>Massa folhada com recheio delicioso.</p>
-          <img src={Croissant} />
-          <h1 className="preco">R$ 9,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Bolo</h1>
-          <p>Mistura de café e chocolate, coberto com chantilly.</p>
-          <img className="Bolo" src={Bolo} />
-          <h1 className="preco">R$ 10,00</h1>
-        </Shape>
-        <Shape>
-          <h1>Torta de Limão</h1>
-          <p>Deliciosa e azedinha, com massa crocante e creme leve.</p>
-          <img src={Torta} />
-          <h1 className="preco">R$ 10,00</h1>
-        </Shape>
-      </Colecao>
-    );
-  }
+      ))}
+    </Colecao>
+  );
 };
 
 export default Produto;
