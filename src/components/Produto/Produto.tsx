@@ -47,7 +47,7 @@ const Produto: React.FC<Props> = ({ type }) => {
   return (
     <Colecao>
       {produtos.map(produto => (
-        <Shape key={produto.id} onClick={() => addToCart({ id: produto.id, name: produto.name, price: produto.price })}>
+        <Shape key={produto.id} onClick={() => addToCart({ id: produto.id, name: produto.name, price: produto.price, img: produto.img })}>
           <h1>{produto.name}</h1>
           <p>{produto.description}</p>
           <img className={produto.id === 'bolo' ?  'Bolo' : produto.id === 'cha_gelado' ? 'ChaGelado' : produto.id === 'cha_morango' ? 'Morango' : ''} src={produto.img} alt={produto.name} />

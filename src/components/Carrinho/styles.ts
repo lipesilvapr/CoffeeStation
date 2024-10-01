@@ -22,7 +22,7 @@ export const MergeCart = styled.div`
 export const Fixed = styled.div`
   position: fixed;
   right: -18.5%;
-  top: 15%;
+  top: 10%;
   display: flex;
   z-index: 2;
 
@@ -45,7 +45,7 @@ export const Fixed = styled.div`
   }
 
   .slide-left {
-    transform: translateX(-81.5%);
+    transform: translateX(-84%);
   }
 
   img {
@@ -57,16 +57,60 @@ export const Fixed = styled.div`
     width: 350px;
     height: 700px;
     background: #fff8e5;
+    padding: 4%;
+
+    .vazio {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 30%;
+    }
+
+    .item {
+      display: flex;
+      width: 95%;
+      border: 1px solid black;
+      height: 6%;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      margin-bottom: 8%;
+
+      .primeiraParte{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imgGelado{
+        width: 20px;
+        margin-left: 5%;
+        padding-left: 0;
+        padding-bottom: 5%;
+      }
+
+      .itemImg {
+        width: 45px;
+        margin-left: 0;
+        padding-top: 0;
+      }
+
+
+      img{
+        width: 30%;
+        padding-top: 5%;
+      }
+    }
 
     p {
-      margin: 0;
+      width: 100%;
     }
   }
 
   .headCart {
     background: #ce7333;
     height: 70px;
-    width: 100%;
+    width: 108.2%;
     display: flex;
     justify-content: center;
     align-items: center;
