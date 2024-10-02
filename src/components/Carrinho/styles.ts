@@ -45,7 +45,7 @@ export const Fixed = styled.div`
   }
 
   .slide-left {
-    transform: translateX(-84%);
+    transform: translateX(-88%);
   }
 
   img {
@@ -58,6 +58,17 @@ export const Fixed = styled.div`
     height: 700px;
     background: #fff8e5;
     padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .lista {
+      max-height: 700px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: #CE7333 transparent;
+    }
 
     .vazio {
       font-size: 20px;
@@ -65,24 +76,43 @@ export const Fixed = styled.div`
       margin-left: 30%;
     }
 
+    .bts {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .textTotal {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .precoTotal {
+        text-align: end;
+      }
+    }
+
     .item {
       display: flex;
-      width: 95%;
+      width: 99%;
       border: 1px solid black;
-      height: 6%;
+      height: 60px;
       justify-content: space-between;
       align-items: center;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       margin-bottom: 8%;
 
-      .primeiraParte{
+      .primeiraParte {
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .imgGelado{
+      .imgGelado {
         width: 20px;
         margin-left: 5%;
         padding-left: 0;
@@ -95,8 +125,7 @@ export const Fixed = styled.div`
         padding-top: 0;
       }
 
-
-      img{
+      img {
         width: 30%;
         padding-top: 5%;
       }
