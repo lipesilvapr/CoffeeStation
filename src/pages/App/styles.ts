@@ -173,6 +173,11 @@ export const Produtos = styled.section`
   font-family: "Montserrat", sans-serif;
   margin-left: 8%;
   margin-right: 9%;
+  
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
 
   h1 {
     font-size: 40px;

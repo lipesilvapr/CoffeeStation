@@ -67,6 +67,7 @@ function App() {
       <Divisao />
       <Produtos id="Produtos">
         <h1>Produtos</h1>
+        <p>Clique no produto desejado para adicionar ao carrinho</p>
         <Menu />
       </Produtos>
       <Divisao/>

@@ -18,4 +18,12 @@ export const Bt = styled.div`
     margin: 0;
     justify-self: center;
   }
+
+  @media(max-width: 980px) {
+    width: 45%;
+
+    p{
+      font-size: 15px;
+    }
+  }
 `;

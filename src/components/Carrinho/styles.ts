@@ -21,7 +21,7 @@ export const MergeCart = styled.div`
 
 export const Fixed = styled.div`
   position: fixed;
-  right: -20%;
+  right: -50%;
   top: 10%;
   display: flex;
   z-index: 2;
@@ -48,12 +48,12 @@ export const Fixed = styled.div`
     transition: transform 0.5s ease;
   }
 
-  .hide{
+  .hide {
     display: none;
   }
 
   .slide-left {
-    transform: translateX(-130%);
+    transform: translateX(-290%);
   }
 
   img {
@@ -75,7 +75,7 @@ export const Fixed = styled.div`
       overflow-y: auto;
       overflow-x: hidden;
       scrollbar-width: thin;
-      scrollbar-color: #CE7333 transparent;
+      scrollbar-color: #ce7333 transparent;
     }
 
     .vazio {
@@ -160,7 +160,33 @@ export const Fixed = styled.div`
     }
   }
 
-  @media(max-width: 980px){
-    right: -65%;
+  @media (max-width: 980px) {
+    right: -100%;
+    top: 20%;
+
+    .infoCar {
+      width: 200px;
+      height: 500px;
+    }
+
+    .headCart {
+      width: 108.2%;
+    }
+
+    .slide-left {
+      transform: translateX(-250%);
+    }
+
+    .textTotal {
+      p{
+        font-size: 14px;
+      }
+    }
+
+    .headCart{
+      h1{
+        font-size: 25px;
+      }
+    }
   }
 `;
