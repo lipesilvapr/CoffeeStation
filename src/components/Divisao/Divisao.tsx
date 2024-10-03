@@ -5,11 +5,11 @@ import Xicara from '../../assets/xicara.svg';
 function Divisao() {
     return(
         <Divisa>
-           <img src={Linha}/>
-           <img src={Xicara}/>
-           <img src={Linha}/>
-           <img src={Xicara}/> 
-           <img src={Linha}/> 
+           <img className="linha" src={Linha}/>
+           <img className="xicara" src={Xicara}/>
+           <img className="linha" src={Linha}/>
+           <img className="xicara" src={Xicara}/> 
+           <img className="linha" src={Linha}/> 
         </Divisa>
     );
 }

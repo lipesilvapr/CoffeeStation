@@ -4,6 +4,10 @@ export const Colecao = styled.div`
   margin-left: 2%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+  }
 `;
 
 export const Shape = styled.div`
@@ -49,13 +53,42 @@ export const Shape = styled.div`
     width: 70%;
   }
 
-  .Bolo{
+  .Bolo {
     width: 70%;
   }
 
   &:hover {
-    background-color: #C9A471; 
-    transform: scale(1.02); 
-    transition: all 0.3s ease; 
+    background-color: #c9a471;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 980px) {
+    width: 70%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 2em;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    img {
+      width: 70%;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .Morango {
+      width: 60%;
+    }
+    .Bolo {
+      width: 60%;
+    }
+    .ChaGelado {
+      width: 40%;
+    }
   }
 `;

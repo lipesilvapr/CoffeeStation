@@ -6,4 +6,10 @@ export const Categoria = styled.div`
     font-size: 38px;
     margin-top: 5%;
   }
+
+  @media(max-width: 980px) {
+    .titulo{
+      font-size: 30px;
+    }
+  }
 `;

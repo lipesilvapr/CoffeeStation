@@ -10,10 +10,28 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
+  z-index: 2;
 
   div {
     margin-left: 2em;
     gap: 20px;
+  }
+
+  @media (max-width: 980px) {
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+    div {
+      margin-left: 1em;
+    }
+
+    h1 {
+      justify-self: center;
+      font-size: 25px;
+      margin-bottom: 0;
+      padding-top: 2%;
+    }
   }
 `;
 
@@ -56,6 +74,33 @@ export const Novidades = styled.section`
     margin-right: 9%;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
   }
+
+  @media (max-width: 980px) {
+    padding-top: 5em;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 9%;
+
+    p {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .texto {
+      line-height: 20px;
+      align-self: center;
+      margin-left: 0;
+      width: 90%;
+    }
+
+    img {
+      align-self: center;
+      width: 45%;
+    }
+  }
 `;
 export const Sobre = styled.section`
   display: flex;
@@ -74,14 +119,13 @@ export const Sobre = styled.section`
   }
 
   .texto {
-    
     margin-top: 2.5%;
     line-height: 35px;
   }
-  
+
   .imgs {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .Img1 {
@@ -95,6 +139,32 @@ export const Sobre = styled.section`
     border-radius: 28px;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
   }
+
+  @media (max-width: 980px) {
+    p {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .texto {
+      line-height: 20px;
+      align-self: center;
+      margin-left: 0;
+      width: 90%;
+    }
+    .Img1 {
+      width: 50%;
+      height: auto;
+    }
+
+    .Img2 {
+      width: 40%;
+      height: auto;
+    }
+  }
 `;
 
 export const Produtos = styled.section`
@@ -107,7 +177,13 @@ export const Produtos = styled.section`
   h1 {
     font-size: 40px;
   }
-`
+
+  @media (max-width: 980px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+`;
 export const Contato = styled.section`
   display: flex;
   flex-direction: column;
@@ -124,4 +200,13 @@ export const Contato = styled.section`
     font-weight: 600;
   }
 
-`
+  @media(max-width: 980px) {
+    h1{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  }
+`;

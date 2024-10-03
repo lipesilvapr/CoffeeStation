@@ -31,10 +31,10 @@ function Carrinho() {
   return (
     <MergeCart>
       <Fixed>
-        <div className={`geral ${isSliding ? "slide-left" : ""}`}>
-          <div className="car" onClick={handleClick}>
+          <div className={`car ${isSliding ? "hide" : ""}`} onClick={handleClick}>
             <img src={Cart} alt="Carrinho" />
           </div>
+        <div className={`geral ${isSliding ? "slide-left" : ""}`}>
           <div className="fullCart">
             <div className="headCart">
               <h1>Seu Carrinho</h1>

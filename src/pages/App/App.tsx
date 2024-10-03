@@ -69,6 +69,7 @@ function App() {
         <h1>Produtos</h1>
         <Menu />
       </Produtos>
+      <Divisao/>
       <Contato id="Contato">
         <h1>Contato</h1>
         <p>Estamos aqui para você!</p>

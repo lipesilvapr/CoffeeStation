@@ -21,7 +21,7 @@ export const MergeCart = styled.div`
 
 export const Fixed = styled.div`
   position: fixed;
-  right: -18.5%;
+  right: -20%;
   top: 10%;
   display: flex;
   z-index: 2;
@@ -33,6 +33,8 @@ export const Fixed = styled.div`
   }
 
   .car {
+    position: fixed;
+    right: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -42,10 +44,16 @@ export const Fixed = styled.div`
     border-radius: 20px 0px 0px 20px;
     background: #ce7333;
     margin-top: 70px;
+    z-index: 3;
+    transition: transform 0.5s ease;
+  }
+
+  .hide{
+    display: none;
   }
 
   .slide-left {
-    transform: translateX(-88%);
+    transform: translateX(-130%);
   }
 
   img {
@@ -150,5 +158,9 @@ export const Fixed = styled.div`
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
     }
+  }
+
+  @media(max-width: 980px){
+    right: -65%;
   }
 `;
