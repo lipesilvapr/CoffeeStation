@@ -164,19 +164,18 @@ export const Fixed = styled.div`
     right: 20%;
     top: 20%;
 
-
-    .geral{
+    .geral {
+      max-height: 0;
       opacity: 0;
       transform: translateY(20px);
       visibility: hidden;
-      transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s;
-      z-index: 3;
-  }
+      transition: opacity 0.5s ease, transform 0.5s ease,
+        visibility 0s linear 0.5s;
+    }
 
     .infoCar {
       width: 250px;
       height: 420px;
-      ;
     }
 
     .headCart {
@@ -184,10 +183,12 @@ export const Fixed = styled.div`
     }
 
     .slide-left {
+      max-height: 420px;
       opacity: 1;
       transform: translateY(0);
       visibility: visible;
       transition: opacity 0.5s ease, transform 0.5s ease;
+      z-index: 2;
     }
 
     .textTotal {
@@ -202,7 +203,7 @@ export const Fixed = styled.div`
       }
     }
 
-    .car{
+    .car {
       margin-top: 25%;
     }
   }
