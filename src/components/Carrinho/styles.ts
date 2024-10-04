@@ -201,5 +201,9 @@ export const Fixed = styled.div`
         font-size: 25px;
       }
     }
+
+    .car{
+      margin-top: 25%;
+    }
   }
 `;
