@@ -61,12 +61,12 @@ export const Nav = styled.nav`
 
     .nav-menu {
       position: fixed;
-      top: 3.5em;
-      right: 10%;
+      top: 5%;
+      right: 0;
       gap: 0;
       flex-direction: column;
-      background-color: #363535;
-      width: 30%;
+      background-color: #D0854F;
+      width: 100%;
       text-align: center;
       align-items: center;
       transition: opacity 0.4s ease;
@@ -76,7 +76,7 @@ export const Nav = styled.nav`
     }
 
     .nav-item {
-      margin: 16px 0;
+      margin: 12px 0;
     }
 
     .nav-menu.active {

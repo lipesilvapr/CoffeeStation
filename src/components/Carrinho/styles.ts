@@ -24,7 +24,7 @@ export const Fixed = styled.div`
   right: -50%;
   top: 10%;
   display: flex;
-  z-index: 2;
+  z-index: 3;
 
   .geral {
     display: flex;
@@ -81,7 +81,7 @@ export const Fixed = styled.div`
     .vazio {
       font-size: 20px;
       font-weight: bold;
-      margin-left: 30%;
+      text-align: center;
     }
 
     .bts {
@@ -161,12 +161,22 @@ export const Fixed = styled.div`
   }
 
   @media (max-width: 980px) {
-    right: -100%;
+    right: 20%;
     top: 20%;
 
+
+    .geral{
+      opacity: 0;
+      transform: translateY(20px);
+      visibility: hidden;
+      transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s;
+      z-index: 3;
+  }
+
     .infoCar {
-      width: 200px;
-      height: 500px;
+      width: 250px;
+      height: 420px;
+      ;
     }
 
     .headCart {
@@ -174,17 +184,20 @@ export const Fixed = styled.div`
     }
 
     .slide-left {
-      transform: translateX(-250%);
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
     .textTotal {
-      p{
+      p {
         font-size: 14px;
       }
     }
 
-    .headCart{
-      h1{
+    .headCart {
+      h1 {
         font-size: 25px;
       }
     }
