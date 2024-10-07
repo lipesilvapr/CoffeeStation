@@ -14,6 +14,10 @@ function Carrinho() {
     setIsSliding(!isSliding);
   };
 
+  const handleBuy = () => {
+    alert("Compra realizada com sucesso")
+  }
+
   const increaseQuantity = (itemId: string) => {
     const item = cart.find((item) => item.id === itemId);
     if (item) {
@@ -86,8 +90,8 @@ function Carrinho() {
                   </p>
                 </div>
                 <div className="bts">
-                  <Botao text="Sair" color="#F00" onClick={handleClick}/>
-                  <Botao text="Continuar" color="#0FA958" onClick={handleClick}/>
+                  <Botao text="Sair" color="#F00" onClick={handleClick} textColor="white"/>
+                  <Botao text="Continuar" color="#0FA958" onClick={handleBuy} textColor="white"/>
                 </div>
               </div>
             </div>

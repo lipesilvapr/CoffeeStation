@@ -8,6 +8,18 @@ export const Colecao = styled.div`
   @media (max-width: 980px) {
     flex-direction: column;
   }
+
+  div{
+    width: 80%;
+    align-self: center;
+  }
+
+  .localBtn{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Shape = styled.div`
@@ -16,13 +28,13 @@ export const Shape = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 20%;
+  width: 100%;
   background-color: #e7d0b0;
   height: 29em;
   border-radius: 22px;
   border: 3px solid #454342;
   font-family: "Pacifico", sans-serif;
-  cursor: pointer;
+  margin-bottom: 1em;
 
   h1 {
     font-size: 30px;
@@ -57,17 +69,11 @@ export const Shape = styled.div`
     width: 70%;
   }
 
-  &:hover {
-    background-color: #c9a471;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-  }
-
   @media (max-width: 980px) {
     width: 70%;
     height: auto;
     align-self: center;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 
     h1 {
       font-size: 20px;
@@ -92,3 +98,26 @@ export const Shape = styled.div`
     }
   }
 `;
+
+export const Btn = styled.button`
+  background-color: #e7d0b0;
+  border: none;
+  border-radius: 5px;
+  font-family: "Pacifico", sans-serif;
+  font-size: 16px;
+  width: 80%;
+  border: 3px solid #454342;
+  cursor: pointer;
+  margin-bottom: 1em;
+
+
+  &:hover {
+    background-color: #c9a471;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+  @media(max-width: 980px) {
+    font-size: 14px
+  }
+`
