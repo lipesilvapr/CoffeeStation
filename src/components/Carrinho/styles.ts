@@ -173,7 +173,7 @@ export const Fixed = styled.div`
 
   @media (max-width: 1400px) {
     right: -30%;
-    top: 10%;
+    top: 12%;
 
     .headCart{
       height: 55px;
@@ -182,10 +182,10 @@ export const Fixed = styled.div`
 
     .infoCar {
       width: 280px;
-      height: 400px;
+      height: 450px;
     }
     .slide-left {
-      transform: translateX(-150%);
+      transform: translateX(-160%);
     }
   }
 
