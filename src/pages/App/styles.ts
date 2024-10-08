@@ -140,6 +140,18 @@ export const Sobre = styled.section`
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
   }
 
+  @media (max-width: 1400px) {
+    .Img1 {
+      height: 38em;
+      border-radius: 25px;
+    }
+
+    .Img2 {
+      height: 38em;
+      border-radius: 25px;
+    }
+  }
+
   @media (max-width: 980px) {
     p {
       font-size: 15px;
@@ -173,7 +185,7 @@ export const Produtos = styled.section`
   font-family: "Montserrat", sans-serif;
   margin-left: 8%;
   margin-right: 9%;
-  
+
   p {
     font-size: 20px;
     font-weight: 600;
@@ -205,12 +217,12 @@ export const Contato = styled.section`
     font-weight: 600;
   }
 
-  @media(max-width: 980px) {
-    h1{
+  @media (max-width: 980px) {
+    h1 {
       font-size: 30px;
     }
 
-    p{
+    p {
       font-size: 15px;
     }
   }

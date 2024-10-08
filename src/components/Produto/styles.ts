@@ -9,12 +9,12 @@ export const Colecao = styled.div`
     flex-direction: column;
   }
 
-  div{
+  div {
     width: 80%;
     align-self: center;
   }
 
-  .localBtn{
+  .localBtn {
     width: 80%;
     height: 3em;
     display: flex;
@@ -69,6 +69,18 @@ export const Shape = styled.div`
     width: 70%;
   }
 
+  @media (max-width: 1400px) {
+    height: 25em;
+
+    h1{
+      font-size: 28px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  }
+
   @media (max-width: 980px) {
     width: 70%;
     height: auto;
@@ -102,7 +114,7 @@ export const Shape = styled.div`
 export const Btn = styled.button`
   background-color: #e7d0b0;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: "Pacifico", sans-serif;
   font-size: 16px;
   width: 80%;
@@ -110,14 +122,18 @@ export const Btn = styled.button`
   cursor: pointer;
   margin-bottom: 1em;
 
-
   &:hover {
     background-color: #c9a471;
     transform: scale(1.02);
     transition: all 0.3s ease;
   }
 
-  @media(max-width: 980px) {
-    font-size: 14px
+  @media (max-width: 1400px) {
+    width: 95%;
+    height: 3em;
   }
-`
+
+  @media (max-width: 980px) {
+    font-size: 14px;
+  }
+`;
