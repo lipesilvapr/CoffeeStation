@@ -160,6 +160,17 @@ export const Fixed = styled.div`
     }
   }
 
+  @media (max-width: 1700px) {
+    .slide-left {
+      transform: translateX(-290%);
+    }
+
+    .infoCar {
+      width: 300px;
+      height: 550px;
+    }
+  }
+
   @media (max-width: 1400px) {
     right: -30%;
     top: 10%;
