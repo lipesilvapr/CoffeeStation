@@ -19,6 +19,12 @@ export const Bt = styled.div`
     justify-self: center;
   }
 
+  @media(max-width: 1400px) {
+    p{
+      font-size: 14px;
+    }
+  }
+
   @media(max-width: 980px) {
     width: 45%;
 
