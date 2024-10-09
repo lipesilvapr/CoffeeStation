@@ -11,8 +11,6 @@ export const Colecao = styled.div`
 
   div {
     width: 85%;
-    align-self: center;
-    justify-content: center;
   }
 
   .localBtn {
