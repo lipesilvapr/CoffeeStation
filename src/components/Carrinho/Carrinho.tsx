@@ -5,6 +5,7 @@ import { useCart } from "../../context/CarrinhoContext";
 import Plus from "../../assets/plus.svg";
 import Minus from "../../assets/minus.svg";
 import Botao from "../Botao/Botao";
+import CartFill from "../../assets/cartFill.svg";
 
 function Carrinho() {
   const { cart, updateQuantity } = useCart();
@@ -35,8 +36,8 @@ function Carrinho() {
   return (
     <MergeCart>
       <Fixed>
-          <div className={`car ${isSliding ? "hide" : ""}`} onClick={handleClick}>
-            <img src={Cart} alt="Carrinho" />
+          <div className={`car ${isSliding ? "hide" : ""} ${cart.length > 0 ? "add-items" : ""}`} onClick={handleClick}>
+            <img src={cart.length > 0 ? CartFill : Cart} alt="Carrinho" className={`carrinho ${cart.length > 0  ? "with-items" : ""}`}/>
           </div>
         <div className={`geral ${isSliding ? "slide-left" : ""}`}>
           <div className="fullCart">

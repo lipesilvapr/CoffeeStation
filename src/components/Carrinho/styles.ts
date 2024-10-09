@@ -45,7 +45,12 @@ export const Fixed = styled.div`
     background: #ce7333;
     margin-top: 70px;
     z-index: 3;
-    transition: transform 0.5s ease;
+    transition: background 0.3s ease, transform 0.5s ease;
+  }
+
+  .add-items{
+    background: #A75216;
+    transition: background 0.3s ease;
   }
 
   .hide {
@@ -59,6 +64,17 @@ export const Fixed = styled.div`
   img {
     width: 50%;
     margin-left: 10%;
+  }
+
+  .carrinho{
+    width:45%;
+    transition: width 0.4s ease;
+  }
+
+  .with-items{
+    width: 38%;
+    margin-left: 11%;
+    transition: width 0.4s ease, margin-left 0.3s ease;
   }
 
   .infoCar {
