@@ -22,7 +22,7 @@ function App() {
       <HeaderContainer>
         <div style={{ display: "flex" }}>
           <StyledSvg src={Logo} />
-          <h1 style={{ color: "white" }}>Coffe Station</h1>
+          <h1 style={{ color: "white" }}>Coffee Station</h1>
         </div>
         <NavBar />
       </HeaderContainer>
