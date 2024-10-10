@@ -6,17 +6,19 @@ import Plus from "../../assets/plus.svg";
 import Minus from "../../assets/minus.svg";
 import Botao from "../Botao/Botao";
 import CartFill from "../../assets/cartFill.svg";
+import { useNavigate } from "react-router-dom";
 
 function Carrinho() {
   const { cart, updateQuantity } = useCart();
   const [isSliding, setIsSliding] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setIsSliding(!isSliding);
   };
 
   const handleBuy = () => {
-    alert("Compra realizada com sucesso")
+    navigate("/pagamento");
   }
 
   const increaseQuantity = (itemId: string) => {
