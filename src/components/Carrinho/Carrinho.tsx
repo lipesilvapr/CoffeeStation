@@ -38,6 +38,7 @@ function Carrinho() {
       <Fixed>
           <div className={`car ${isSliding ? "hide" : ""} ${cart.length > 0 ? "add-items" : ""}`} onClick={handleClick}>
             <img src={cart.length > 0 ? CartFill : Cart} alt="Carrinho" className={`carrinho ${cart.length > 0  ? "with-items" : ""}`}/>
+            <p className={`${cart.length> 0 ? "quantity" : "hide"}`}>{cart.reduce((acc, item) => acc + (item.quantity || 0), 0)}</p>
           </div>
         <div className={`geral ${isSliding ? "slide-left" : ""}`}>
           <div className="fullCart">

@@ -48,6 +48,13 @@ export const Fixed = styled.div`
     transition: background 0.3s ease, transform 0.5s ease;
   }
 
+  .quantity{
+    color: white;
+    margin-left: 12%;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif
+  }
+
   .add-items{
     background: #A75216;
     transition: background 0.3s ease;
